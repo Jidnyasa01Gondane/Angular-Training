@@ -1,0 +1,11 @@
+.admin {
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.user {
+    background-color: chartreuse;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}

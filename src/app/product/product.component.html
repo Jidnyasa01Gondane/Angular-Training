@@ -1,0 +1,18 @@
+<p>
+  product works!
+</p>
+<div [ngClass] = "{'admin' : themVar=='admin','user' : themVar=='user'}">
+<table border="1" >
+  <tr>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+  </tr>
+  <tr *ngFor="let items of product" [ngStyle]="{'background-color':items.pId%2===0 ?'orange':'yellow'}">
+    <td>{{items.pId}}</td>
+    <td>{{items.pName}}</td>
+    <td>{{items.pPrice}}</td>
+  </tr>
+</table>
+</div>
+<button (click)="toggleDiv()">Toggle</button>
